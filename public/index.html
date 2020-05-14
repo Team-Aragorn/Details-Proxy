@@ -2,8 +2,24 @@
 <html>
   <head>
     <title>Details Proxy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href='http://localhost:3003/games/:gameId/styles.css'>
+    <link rel="stylesheet" type="text/css" href='http://localhost:3005/styles.css'>
+    <link rel="stylesheet" type="text/css" href='http://localhost:3001/games/:gameId/app.css'>
+    <link rel="stylesheet" type="text/css" href='http://localhost:3004/games/:gameId/styles.css'>
   </head>
   <body>
-    <h1>HELLO WORLD</h1>
+    <div id="container">
+      <div id="carousel"></div>
+      <div id="addToCart"></div>
+      <div id="game-details"></div>
+      <div id="recommended"></div>
+      <div id="reviews"></div>
+    </div>
+      <script src='http://localhost:3001/games/:gameId/bundle.js'></script>
+      <script src='http://localhost:3002/games/:gameId/app.js'></script>
+      <script src='http://localhost:3003/games/:gameId/bundle.js'></script>
+      <script src='http://localhost:3004/games/:gameId/bundle.js'></script>
+      <script src='http://localhost:3005/bundle.js'></script>
   </body>
 </html>
