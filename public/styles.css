@@ -1,0 +1,77 @@
+#container {
+  font-family: Montserrat,sans-serif;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "top"
+    "details"
+    "recommended"
+    "reviews";
+}
+
+#mainTitle {
+  text-align: center;
+  font-weight: 900!important;
+  font-size: 80px;
+  margin: 0%;
+}
+
+#selectionBar{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto repeat(8, 10%) auto;
+  border-bottom: 2px solid #dbdbdb;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0,
+  0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.19);
+}
+
+#red {
+  color: #DA3625;
+}
+
+.mid {
+  align-self: center;
+  justify-self: center;
+}
+
+.mid:hover {
+  color: #DA3625;
+}
+
+#top{
+  grid-area: top;
+  max-width: 1280;
+  display: grid;
+  grid-template-areas:
+  "carousel addtocart";
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#carousel {
+  max-width: 600px;
+  justify-self: end;
+  grid-area: carousel;
+}
+
+#addToCart {
+  max-width: 450px;
+  justify-self: start;
+  grid-area: addtocart;
+}
+
+#game-details {
+  background-color: #f2f4f7;
+  grid-area: details;
+}
+
+#recommended {
+  background-color: #f2f4f7;
+  grid-area: recommended;
+}
+
+#reviews {
+  grid-area: reviews;
+}
